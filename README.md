@@ -1,5 +1,5 @@
-#În exemplul de cod pe care l-am scris sunt utilizate trei Creational Design Patterns diferite.
-#Factory Method Pattern: 
+# În exemplul de cod pe care l-am scris sunt utilizate trei Creational Design Patterns diferite.
+## Factory Method Pattern: 
 Este utilizat prin intermediul clasei BookFactory, care are o metodă statică createBook(). Această metodă creează obiecte de tipul Book, ascunzând detaliile de implementare și permitând astfel crearea de noi tipuri de cărți fără a fi necesară modificarea codului existent.
 
 ```
@@ -16,7 +16,7 @@ public class BookFactory {
   }
 }
 ```
-#Abstract Factory Pattern: 
+## Abstract Factory Pattern: 
 Acesta este utilizat prin intermediul interfeței BookAbstractFactory și a claselor FictionBookFactory și NonFictionBookFactory care implementează această interfață. Fiecare fabrică concretă implementează metodele din interfața abstractă pentru a crea obiecte de tipul Book specific pentru tipul de carte.
 ```
 public class FictionBook extends Book {
@@ -42,7 +42,7 @@ public class NonFictionBook extends Book {
   }
 }
 ```
-#Singleton Pattern
+## Singleton Pattern
 Mai întâi, vom crea o metodă statică getInstance() în clasa Inventory, care va returna instanța singleton. Această metodă va crea instanța Inventory dacă aceasta nu există deja și o va returna în caz contrar. În plus, constructorul clasei Inventory trebuie să fie privat, pentru a preveni crearea de noi instanțe ale acestei clase din afara clasei.
 ```
 public class Inventory {
